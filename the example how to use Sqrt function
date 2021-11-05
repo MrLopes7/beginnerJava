@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+    Double Hipo, B, C, CatB, CatC, SunCat;
+    System.out.println("digite o cateto B");
+    Scanner catetoB;
+    catetoB = new Scanner(System.in);
+    B = catetoB.nextDouble();
+    System.out.println("agora digite o cateto C");
+    Scanner catetoC;
+    catetoC = new Scanner(System.in);
+    C = catetoC.nextDouble();
+    CatB = Math.pow(B,2);
+    CatC = Math.pow(C,2);
+    SunCat = CatB+CatC;
+    Hipo = Math.sqrt(SunCat);
+    System.out.println("A Hipotenusa é "+Hipo);
+
+	}
+}
